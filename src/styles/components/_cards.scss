@@ -1,0 +1,34 @@
+.thumb{
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow .2s ease-in-out;
+    width: 30%;
+    height: 350px;
+
+
+    img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        filter: brightness(75%);
+        
+    }
+
+    .thumb__title{
+        bottom: 20px;
+        color: #fff;
+        font-size: clamp(12px,3vw,18px);
+        font-weight: 500;
+        left: 20px;
+        position: absolute;
+        right: 20px;
+        z-index: 20;
+    }
+
+
+
+}
