@@ -5,8 +5,10 @@ import Navigation from "../components/Navigation";
 const Header = () => {
   return (
     <div className="header">
-      <Logo />
-      <Navigation />
+      <div className="header_component">
+        <Logo />
+        <Navigation />
+      </div>
     </div>
   );
 };

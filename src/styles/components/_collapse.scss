@@ -9,22 +9,25 @@
 .collapse{
     width: 80%;
     display: flex;
-    height: auto;
     flex-direction: column;
     margin-bottom: 30px;
     border-radius: (0 0 15px 15px);
     background-color: $color-2;
+    color:$color-1;
 
 
     &_title{
     
     width: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     background-color: $color-1;
     justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 10px;
 
         
     .chevron_up{
@@ -39,9 +42,11 @@
     }
 
     h2{
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
         color: white;
         width: 200px;
-        height: 50px;
       
     }
 
@@ -49,7 +54,8 @@
 
 .content{
     display: flex;
-
+    flex-direction: column;
+    padding: 20px;
    
 }
 

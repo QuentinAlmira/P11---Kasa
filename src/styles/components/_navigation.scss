@@ -1,19 +1,26 @@
 .navigation {
   ul {
+    margin-right: 5%;
+    width: 250px;
     display: flex;
-    margin: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3em;
+
+    font-weight: bold;
+
 
     a {
       text-decoration: none;
-      padding: 10px;
 
       li {
+        padding: 5px;
         color: $color-1;
         transition: 0.2s;
         cursor: pointer;
 
         &:hover {
-          color: $color-3;
+          color: $color-1;
         }
       }
     }

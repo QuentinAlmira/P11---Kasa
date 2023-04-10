@@ -11,11 +11,17 @@ const Collapse = ({ title, content }) => {
         <img
           className={deploy ? "chevron_up" : "chevron_down"}
           src={Chevron}
-          alt="deploy content"
+          alt="deployed content"
         />
       </div>
 
-      <div className={deploy ? "content" : "content_hidden"}>{content}</div>
+      <div className={deploy ? "content" : "content_hidden"}>
+        {Array.isArray(content)
+          ? content.map((item, index) => {
+              return <div key={index}>{item}</div>;
+            })
+          : content}
+      </div>
     </div>
   );
 };
