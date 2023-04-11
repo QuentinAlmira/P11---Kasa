@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/banner";
 import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 
 const aboutDatas = [
   {
@@ -42,6 +43,7 @@ const About = () => {
           </div>
         );
       })}
+      <Footer />
     </div>
   );
 };

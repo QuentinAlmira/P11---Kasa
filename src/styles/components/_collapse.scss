@@ -15,6 +15,11 @@
     background-color: $color-2;
     color:$color-1;
 
+    @media screen and (max-width: 650px){
+        width: 95%;
+    }
+    
+
 
     &_title{
     
