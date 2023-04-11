@@ -1,4 +1,4 @@
-import Footerlogo from "../assets/img/LogoKazaWhite.png";
+import Footerlogo from "../../assets/img/LogoKazaWhite.png";
 
 export default function Footer() {
   return (

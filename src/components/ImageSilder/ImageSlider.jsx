@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import arrow_back from "../assets/img/arrow_back.png";
-import arrow_forward from "../assets/img/arrow_forward.png";
+import arrow_back from "../../assets/img/arrow_back.png";
+import arrow_forward from "../../assets/img/arrow_forward.png";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurentIndex] = useState(0);

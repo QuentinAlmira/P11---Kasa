@@ -1,6 +1,6 @@
-import data from "../data/data.json";
+import data from "../../data/data.json";
 import React from "react";
-import Cards from "./Cards";
+import Cards from "../Cards/Cards";
 
 const Realestate = () => {
   return (

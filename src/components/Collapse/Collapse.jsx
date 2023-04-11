@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Chevron from "../assets/img/arrow_down.png";
+import Chevron from "../../assets/img/arrow_down.png";
 
 const Collapse = ({ title, content }) => {
   const [deploy, setDeploy] = useState();

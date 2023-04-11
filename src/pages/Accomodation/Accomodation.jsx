@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import datas from "../data/data.json";
-import Header from "../components/Header";
-import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
-import ImageSlider from "../components/ImageSlider";
-import Rating from "../components/Rating";
+import datas from "../../data/data.json";
+import Header from "../../components/Header/Header";
+import Collapse from "../../components/Collapse/Collapse";
+import Footer from "../../components/Footer/Footer";
+import ImageSlider from "../../components/ImageSilder/ImageSlider";
+import Rating from "../../components/Rating/Rating";
 
 export default function Accomodation() {
   const idAccomodation = useParams("id").id;
   const dataCurrentAccomodation = datas.filter(
     (data) => data.id === idAccomodation
   );
+
+  console.log(dataCurrentAccomodation);
 
   const title = dataCurrentAccomodation[0].title;
   const location = dataCurrentAccomodation[0].location;
