@@ -10,7 +10,7 @@ const Error = () => {
         <h1>404</h1>
         <h2>Oups ! La page que vous demandez n'existe pas</h2>
 
-        <Link to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+        <Link to="/">
           <h4>Retouner sur la page d'acceuil</h4>
         </Link>
       </div>

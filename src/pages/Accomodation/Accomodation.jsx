@@ -6,14 +6,19 @@ import Collapse from "../../components/Collapse/Collapse";
 import Footer from "../../components/Footer/Footer";
 import ImageSlider from "../../components/ImageSilder/ImageSlider";
 import Rating from "../../components/Rating/Rating";
+import Error from "../Error/Error";
 
 export default function Accomodation() {
   const idAccomodation = useParams("id").id;
   const dataCurrentAccomodation = datas.filter(
     (data) => data.id === idAccomodation
   );
-
-  console.log(dataCurrentAccomodation);
+if(dataCurrentAccomodation.length == 0)
+{
+  return (
+    <Error />
+  );
+}
 
   const title = dataCurrentAccomodation[0].title;
   const location = dataCurrentAccomodation[0].location;
