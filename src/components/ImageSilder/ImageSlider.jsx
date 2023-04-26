@@ -17,10 +17,19 @@ const ImageSlider = ({ slides }) => {
     setCurentIndex(newIndex);
   };
 
+  if(slides.length === 1){
+    return (
+      <div className="slider">
+        <img src={slides[currentIndex]} alt="" />
+      </div>
+    )
+      
+  }else
   return (
     <div>
       <div className="slider">
         <img src={slides[currentIndex]} alt="" />
+
         <div className="slider_arrows">
           <img
             className="slider_arrows_left"
