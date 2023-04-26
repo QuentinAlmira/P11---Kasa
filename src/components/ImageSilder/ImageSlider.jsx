@@ -20,7 +20,7 @@ const ImageSlider = ({ slides }) => {
   if(slides.length === 1){
     return (
       <div className="slider">
-        <img src={slides[currentIndex]} alt="" />
+        <img src={slides[0]} alt="" />
       </div>
     )
       
